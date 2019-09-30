@@ -1,5 +1,5 @@
 const mapboxgl = require("mapbox-gl");
-const addMarker = require("./marker");
+const {addMarker} = require("./marker");
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWMyZ3JlZW4iLCJhIjoiY2sxNmt1OG42MTZ1YzNtcnNseGQ4ZDUwcyJ9.IrkLUmQuCAuEeIQC41-rJg';
 
@@ -9,6 +9,6 @@ const map = new mapboxgl.Map({
   zoom: 12, // starting zoom
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
-
-const marker = addMarker('activity', [-74.009151, 40.705086]);
+//console.log("HIIIIIII")
+const marker = addMarker('hotel', [-74.009151, 40.705086]);
 marker.addTo(map);
